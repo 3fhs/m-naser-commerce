@@ -1,0 +1,29 @@
+.body-product {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  align-content: center;
+}
+.card {
+  width: 18rem;
+  height: 800px;
+  background-color: rgb(227, 244, 255);
+}
+.cart-bottom {
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30%;
+}
+.price {
+  padding: 10px 10px 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  color: goldenrod;
+  text-transform: uppercase;
+}

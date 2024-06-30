@@ -1,0 +1,25 @@
+.shopping-list {
+  padding-top: 100px;
+  background-color: #eceded;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+.tottal {
+  background-color: antiquewhite;
+}
+@media (max-width: 767px) {
+  .img-product {
+    display: none;
+  }
+  .img-shopping {
+    display: none;
+  }
+  .shopping-delete {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .Quantity {
+    display: none;
+  }
+}

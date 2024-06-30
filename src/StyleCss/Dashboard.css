@@ -1,0 +1,137 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: #eceded;
+}
+.side-dash {
+  width: 250px;
+  box-shadow: 0 0 10px #ddd;
+  padding: 20px;
+  position: relative;
+  background-color: #f8f9fa;
+}
+.side-dash h3 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+}
+.side-dash h3::after,
+.side-dash h3::before {
+  content: "";
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.side-dash h3::after {
+  width: 22px;
+  height: 22px;
+  background-color: blue;
+  bottom: -30px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.side-dash h3::before {
+  width: 100px;
+  height: 2px;
+  background-color: blue;
+  bottom: -20px;
+}
+.head-side-dash {
+  text-align: center;
+}
+.side-conter ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.side-conter ul li:hover {
+  background-color: #eee;
+}
+.side-conter ul li.active {
+  background-color: #eee;
+}
+.side-icons li a i {
+  color: #0d6efd;
+}
+@media (max-width: 767px) {
+  .side-dash {
+    width: 65px;
+    padding: 10px;
+  }
+  .side-conter ul li i {
+    text-align: center;
+    width: 100%;
+  }
+  .side-dash h3::after,
+  .side-dash h3::before {
+    display: none;
+  }
+  thead tr th {
+    padding: 5px !important;
+  }
+}
+/* start side dashboard */
+.side-dashboard {
+  width: 100%;
+}
+/* end side dashboard */
+/*start navbar-dashborad*/
+.navbar-dashborad {
+  box-shadow: 5px 0 10px #ddd;
+}
+/*end navbar-dashboard*/
+/*start dashboard body*/
+.dashboard-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  gap: 40px;
+}
+.side-product {
+  padding: 20px;
+}
+@media (max-width: 767px) {
+  .dashboard-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 40px;
+  }
+  .side-product {
+    padding: 5px;
+  }
+}
+/*end dashboard body*/
+.input-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-head a {
+  width: 200px;
+}
+.input-head a .fa-plus {
+  margin-right: 10px;
+  color: white;
+}
+.input-head a span {
+  font-size: 20px;
+}
+.input-search {
+  width: 200px;
+}
+@media (max-width: 767px) {
+  .input-head a {
+    width: 150px;
+    padding: 5px;
+  }
+  .input-head a span {
+    font-size: 15px;
+  }
+  .input-search {
+    width: 100px;
+  }
+}
